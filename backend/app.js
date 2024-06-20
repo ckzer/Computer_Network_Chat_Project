@@ -23,7 +23,7 @@ io.on("connection", (socket) => {
 
      // [송신] 연결된 클라이언트 전체에 메세지를 보냄
     io.emit("receive message", { name: item.name, message: item.message });
-    
+
   });
 });
 
